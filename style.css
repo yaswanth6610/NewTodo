@@ -167,3 +167,52 @@ ul li.added::before {
 ul li input.status:checked + input.content + button.edit + button.delete {
   color: #fff;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .bottom-header button {
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+
+  ul li {
+    padding: 8px 10px;
+  }
+
+  ul li input.content {
+    font-size: 16px;
+  }
+
+  ul li button {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  ul li button.edit,
+  ul li button.save,
+  ul li button.delete {
+    font-size: 15px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .bottom-header button {
+    padding: 16px 50px;
+    font-size: 17px;
+  }
+
+  ul li input.content {
+    font-size: 20px;
+  }
+
+  ul li button {
+    padding: 10px 10px;
+    font-size: 17px;
+  }
+}
