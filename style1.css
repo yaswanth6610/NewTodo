@@ -67,7 +67,7 @@ body {
   padding: 16px 50px;
   background: #ff5945;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 17px;
   cursor: pointer;
   border-radius: 40px;
 }
@@ -98,7 +98,7 @@ ul li input.status {
   margin-right: 10px;
 }
 
-ul li input.status:checked + input.title {
+ul li input.status:checked + input.content {
   text-decoration: line-through;
 }
 
@@ -107,7 +107,7 @@ ul li input.status:checked {
   color: #fff;
 }
 
-ul li input.title {
+ul li input.content {
   cursor: default;
   flex: 1;
   border: none;
@@ -119,7 +119,7 @@ ul li input.title {
   transition: color 0.3s ease;
 }
 
-ul li input.title:hover {
+ul li input.content:hover {
   color: #000;
 }
 
@@ -155,14 +155,15 @@ ul li::before {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #ff5945;
+  margin-left: 8px;
+  background-color: rgb(7, 7, 99);
   transition: width 0.4s ease-in-out;
 }
 
 ul li.added::before {
-  width: 100%;
+  width: 95%;
 }
 
-ul li input.status:checked + input.title + button.edit + button.delete {
+ul li input.status:checked + input.content + button.edit + button.delete {
   color: #fff;
 }
