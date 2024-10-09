@@ -182,6 +182,7 @@ ul li input.status:checked + input.content + button.edit + button.delete {
 
   ul li {
     padding: 8px 10px;
+    max-width: fit-content;
   }
 
   ul li input.content {
